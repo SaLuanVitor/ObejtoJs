@@ -39,39 +39,39 @@ const cadastro = [
         nome: "Pedro",
         idade: "23",
         telefone: true,
-        amigos: ["Ensino médio", "8 anos", "Mesma cidade", "Homem"]
+        amigos: ["Luan", "Edson", "Deyvid", "Diego"]
     },
 
     {
         nome: "Giovana",
         idade: 24,
         telefone: true,
-        amigos: ["Amigos em comum", "2 anos", "Cidades diferentes", "Namorada"]
+        amigos: ["Willian", "Emanuel", "Gabriele", "Vinicius"]
     },
     {
         nome: "Willian",
         idade: 23,
         telefone: true,
-        amigos: ["Mesmo colégio", "8 anos", "Mesma cidade", "Homem"]
+        amigos: ["Izabel", "Amanda", "Luara", "Matheus"]
     },
     {
         nome: "Emanuel",
         idade: 22,
         telefone: true,
-        amigos: ["Colégios diferentes", "4 anos", "Mesma cidade", "Lindo"]
+        amigos: ["José", "Clara", "Thiago", "Erick"]
     },
     {
         nome: "Ariel",
         idade: 23,
         telefone: true,
-        amigos: ["Colégios diferentes", "4 anos", "Mesma cidade", "Inspiração"]
+        amigos: ["Fernanda", "Marcos", "Luana", "Carla"]
     },
 ]
 
-console.log(cadastro[0].amigos[2]);
-console.log(cadastro[1].amigos[3]);
-console.log(cadastro[2].amigos[1]);
-console.log(cadastro[3].amigos[0]);
-console.log(cadastro[4].amgios[1]);
+
+for (let i = 0; i < cadastro.length; i++) {
+    let amigoR = Math.floor(Math.random() * 4)
+    console.log(`${cadastro[i].nome} possui um amig que se chama ${cadastro[i].amigos[amigoR]}`);
+}
 
 
